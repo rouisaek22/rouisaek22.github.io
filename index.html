@@ -1,457 +1,163 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Retro Blog - 2010 Style</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta charset="utf-8">
+    <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
+    <title>Rouis Aek</title>
     <style>
-        /* Reset and base styles */
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-        
         body {
-            font-family: 'Trebuchet MS', Arial, sans-serif;
-            background-color: #f0f0f0;
-            color: #333;
-            line-height: 1.6;
-        }
-        
-        a {
-            text-decoration: none;
-            color: #0066cc;
-        }
-        
-        a:hover {
-            text-decoration: underline;
-        }
-        
-        /* Container */
-        .container {
-            width: 960px;
-            margin: 0 auto;
-            background-color: #fff;
-            box-shadow: 0 0 10px rgba(0,0,0,0.1);
-            border-radius: 8px;
-            overflow: hidden;
-        }
-        
-        /* Header */
-        header {
-            background: linear-gradient(to bottom, #4a6baf, #2c4a8a);
-            color: white;
-            padding: 20px;
-            text-align: center;
-            border-bottom: 5px solid #ff9900;
-            position: relative;
-        }
-        
-        .header-content {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-        
-        .blog-title {
-            font-size: 36px;
-            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
-            font-weight: bold;
-        }
-        
-        .blog-description {
-            font-size: 16px;
-            margin-top: 5px;
-            font-style: italic;
-        }
-        
-        /* Navigation */
-        nav {
-            background: linear-gradient(to bottom, #3a5998, #2c4a8a);
-            padding: 10px 0;
-        }
-        
-        nav ul {
+            background: #000;
             display: flex;
             justify-content: center;
-            list-style: none;
-        }
-        
-        nav li {
-            margin: 0 15px;
-        }
-        
-        nav a {
-            color: white;
-            font-weight: bold;
-            padding: 5px 10px;
-            border-radius: 4px;
-            transition: background 0.3s;
-        }
-        
-        nav a:hover {
-            background-color: rgba(255,255,255,0.2);
-            text-decoration: none;
-        }
-        
-        /* Main content */
-        .main-content {
-            display: flex;
-            padding: 20px;
-        }
-        
-        /* Blog posts */
-        .posts {
-            flex: 3;
-            margin-right: 20px;
-        }
-        
-        .post {
-            background: #fff;
-            border: 1px solid #ddd;
-            border-radius: 8px;
-            padding: 20px;
-            margin-bottom: 20px;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-        }
-        
-        .post-title {
-            font-size: 24px;
-            color: #2c4a8a;
-            margin-bottom: 10px;
-        }
-        
-        .post-meta {
-            color: #777;
-            font-size: 14px;
-            margin-bottom: 15px;
-            border-bottom: 1px dashed #ddd;
-            padding-bottom: 10px;
-        }
-        
-        .post-content {
-            margin-bottom: 15px;
-        }
-        
-        .read-more {
-            display: inline-block;
-            background: linear-gradient(to bottom, #ff9900, #e68a00);
-            color: white;
-            padding: 8px 15px;
-            border-radius: 4px;
-            font-weight: bold;
-            transition: all 0.3s;
-        }
-        
-        .read-more:hover {
-            background: linear-gradient(to bottom, #e68a00, #cc7a00);
-            text-decoration: none;
-            transform: translateY(-2px);
-        }
-        
-        /* Sidebar */
-        .sidebar {
-            flex: 1;
-        }
-        
-        .widget {
-            background: #f9f9f9;
-            border: 1px solid #ddd;
-            border-radius: 8px;
-            padding: 15px;
-            margin-bottom: 20px;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-        }
-        
-        .widget-title {
-            font-size: 18px;
-            color: #2c4a8a;
-            margin-bottom: 10px;
-            padding-bottom: 5px;
-            border-bottom: 2px solid #ff9900;
-        }
-        
-        .widget-content ul {
-            list-style: none;
-        }
-        
-        .widget-content li {
-            margin-bottom: 8px;
-            padding-left: 15px;
-            position: relative;
-        }
-        
-        .widget-content li:before {
-            content: "»";
-            position: absolute;
-            left: 0;
-            color: #ff9900;
-        }
-        
-        /* Footer */
-        footer {
-            background: linear-gradient(to bottom, #2c4a8a, #1a2f5c);
-            color: white;
-            text-align: center;
-            padding: 20px;
-            border-top: 5px solid #ff9900;
-        }
-        
-        .footer-content {
-            display: flex;
-            justify-content: space-between;
             align-items: center;
-        }
-        
-        .social-icons a {
-            color: white;
+            height: 100vh;
+            margin: 0;
+            font-family: 'VT323', monospace;
             font-size: 20px;
-            margin: 0 5px;
-            transition: color 0.3s;
         }
-        
-        .social-icons a:hover {
-            color: #ff9900;
+
+        a {
+            color: yellow;
             text-decoration: none;
         }
-        
-        /* Comments */
-        .comments {
-            margin-top: 20px;
+
+        .bios-screen {
+            width: 800px;
+            height: 600px;
+            background: #0000a8;
+            border: 4px solid #1a1a1a;
+            box-shadow: 0 0 25px #000;
+            overflow: hidden;
         }
-        
-        .comment {
-            background: #f9f9f9;
-            border: 1px solid #ddd;
-            border-radius: 4px;
-            padding: 10px;
-            margin-bottom: 10px;
+
+        .top-menu {
+            background: #0000a8;
+            padding: 10px 20px;
+            border-bottom: 2px solid #ffffff;
+            display: flex;
+            gap: 20px;
         }
-        
-        .comment-meta {
-            font-size: 12px;
-            color: #777;
-            margin-bottom: 5px;
-        }
-        
-        /* Forms */
-        input, textarea {
-            width: 100%;
-            padding: 8px;
-            margin-bottom: 10px;
-            border: 1px solid #ddd;
-            border-radius: 4px;
-        }
-        
-        button {
-            background: linear-gradient(to bottom, #4a6baf, #2c4a8a);
-            color: white;
-            border: none;
-            padding: 8px 15px;
-            border-radius: 4px;
+
+        .top-menu div {
             cursor: pointer;
-            transition: background 0.3s;
         }
-        
-        button:hover {
-            background: linear-gradient(to bottom, #2c4a8a, #1a2f5c);
+
+        .top-menu .active {
+            color: yellow;
+            text-decoration: underline;
         }
-        
-        /* Reflection effect (classic 2010 style) */
-        .reflection {
-            position: relative;
+
+        .content {
+            padding: 20px;
         }
-        
-        .reflection:after {
-            content: "";
-            position: absolute;
-            bottom: -35px;
-            left: 0;
-            width: 100%;
-            height: 30px;
-            background: linear-gradient(to bottom, rgba(255,255,255,0.3), rgba(255,255,255,0));
-            transform: scaleY(-1);
-            opacity: 0.5;
+
+        .panel {
+            display: none;
+        }
+
+        .panel.active {
+            display: block;
         }
     </style>
 </head>
+
 <body>
-    <div class="container">
-        <header>
-            <div class="header-content">
-                <div>
-                    <h1 class="blog-title reflection">My Retro Blog</h1>
-                    <p class="blog-description">A blast from the past - 2010 web design</p>
-                </div>
-                <div class="search-box">
-                    <input type="text" placeholder="Search...">
-                    <button><i class="fa fa-search"></i></button>
-                </div>
+    <div class="bios-screen">
+        <div class="top-menu">
+            <div data-target="about" class="active">Main</div>
+            <div data-target="projects">Boot</div>
+            <div data-target="skills">Advanced</div>
+            <div data-target="utils">Utilities</div>
+            <div data-target="contact">Exit</div>
+        </div>
+
+        <div class="content">
+            <div class="panel active" id="about">
+                <h2>Main</h2>
+                <p>My name is Rouis Abdelkader, based in Algeria. I use the .NET ecosystem to build backend and frontend
+                    web solutions.</p>
+                <hr>
             </div>
-        </header>
-        
-        <nav>
-            <ul>
-                <li><a href="#"><i class="fa fa-home"></i> Home</a></li>
-                <li><a href="#"><i class="fa fa-file-text"></i> Articles</a></li>
-                <li><a href="#"><i class="fa fa-image"></i> Gallery</a></li>
-                <li><a href="#"><i class="fa fa-users"></i> About</a></li>
-                <li><a href="#"><i class="fa fa-envelope"></i> Contact</a></li>
-            </ul>
-        </nav>
-        
-        <div class="main-content">
-            <div class="posts">
-                <article class="post">
-                    <h2 class="post-title">Welcome to My Retro Blog</h2>
-                    <div class="post-meta">
-                        Posted on <span class="date">October 15, 2010</span> by <span class="author">Admin</span> | 
-                        <span class="comments-count">3 Comments</span>
-                    </div>
-                    <div class="post-content">
-                        <p>Welcome to my brand new blog! This template is designed to capture the essence of web design from 2010, complete with gradients, reflections, and rounded corners that were all the rage back then.</p>
-                        <p>Remember when we used to add reflections to everything? And gradients were everywhere? This blog brings back those nostalgic design elements that defined the web a decade ago.</p>
-                    </div>
-                    <a href="#" class="read-more">Read More</a>
-                    
-                    <div class="comments">
-                        <h3>Comments (3)</h3>
-                        <div class="comment">
-                            <div class="comment-meta">John Doe - October 16, 2010</div>
-                            <p>Great blog design! Really takes me back to the good old days of web design.</p>
-                        </div>
-                        <div class="comment">
-                            <div class="comment-meta">Jane Smith - October 17, 2010</div>
-                            <p>Love the retro feel! The gradients and reflections are spot on.</p>
-                        </div>
-                        <div class="comment">
-                            <div class="comment-meta">Mike Johnson - October 18, 2010</div>
-                            <p>This reminds me of my first blog back in 2010. Good times!</p>
-                        </div>
-                        
-                        <h3>Leave a Comment</h3>
-                        <form>
-                            <input type="text" placeholder="Your Name">
-                            <input type="email" placeholder="Your Email">
-                            <textarea placeholder="Your Comment" rows="5"></textarea>
-                            <button type="submit">Submit Comment</button>
-                        </form>
-                    </div>
-                </article>
-                
-                <article class="post">
-                    <h2 class="post-title">The Web Design Trends of 2010</h2>
-                    <div class="post-meta">
-                        Posted on <span class="date">October 10, 2010</span> by <span class="author">Admin</span> | 
-                        <span class="comments-count">5 Comments</span>
-                    </div>
-                    <div class="post-content">
-                        <p>In 2010, web design was all about certain distinctive trends that have since evolved or disappeared entirely. Let's take a look at some of the most popular design elements from that era.</p>
-                        <p>From glossy buttons to reflective text, these design choices defined the look and feel of websites during this period.</p>
-                    </div>
-                    <a href="#" class="read-more">Read More</a>
-                </article>
+
+            <div class="panel" id="projects">
+                <h2>Boot</h2>
+                <p>Project list loaded.</p>
+                <ul>
+                    <li><a href="https://github.com/rouisaek22/anvil-http" target="_blank">Anvil.Http(experimental)</a>:
+                        High-performance HTTP
+                        request parser for .NET using zero-copy, span-based parsing.</li>
+                </ul>
             </div>
-            
-            <div class="sidebar">
-                <div class="widget">
-                    <h3 class="widget-title">About Me</h3>
-                    <div class="widget-content">
-                        <p>Welcome to my retro blog! I'm a web designer who's passionate about the history of web design and how it has evolved over the years.</p>
-                    </div>
-                </div>
-                
-                <div class="widget">
-                    <h3 class="widget-title">Categories</h3>
-                    <div class="widget-content">
-                        <ul>
-                            <li><a href="#">Web Design</a></li>
-                            <li><a href="#">Technology</a></li>
-                            <li><a href="#">Retro Computing</a></li>
-                            <li><a href="#">Personal</a></li>
-                            <li><a href="#">Tutorials</a></li>
-                        </ul>
-                    </div>
-                </div>
-                
-                <div class="widget">
-                    <h3 class="widget-title">Recent Posts</h3>
-                    <div class="widget-content">
-                        <ul>
-                            <li><a href="#">Welcome to My Retro Blog</a></li>
-                            <li><a href="#">The Web Design Trends of 2010</a></li>
-                            <li><a href="#">Remembering Flash Websites</a></li>
-                            <li><a href="#">My First HTML Website</a></li>
-                            <li><a href="#">Why I Love Retro Design</a></li>
-                        </ul>
-                    </div>
-                </div>
-                
-                <div class="widget">
-                    <h3 class="widget-title">Subscribe</h3>
-                    <div class="widget-content">
-                        <p>Get the latest posts delivered to your inbox:</p>
-                        <input type="email" placeholder="Your Email">
-                        <button>Subscribe</button>
-                    </div>
-                </div>
+
+            <div class="panel" id="skills">
+                <h2>Advanced</h2>
+                <p>Capabilities:</p>
+                <ul>
+                    <li>Adaptable</li>
+                    <li>Analytical</li>
+                    <li>Decisive</li>
+                    <li>Disciplined</li>
+                    <li>Innovative</li>
+                    <li>Insightful</li>
+                    <li>Pragmatic</li>
+                    <li>Resilient</li>
+                    <li>Resourceful</li>
+                </ul>
+            </div>
+
+            <div class="panel" id="utils">
+                <h2>Interests</h2>
+                <ul>
+                    <li>Algorithms & Data Structures</li>
+                    <li>Computer Graphics</li>
+                    <li>Computer networking</li>
+                    <li>Cryptography</li>
+                    <li>Electronics</li>
+                    <li>Low-level programming</li>
+                    <li>Performance optimization</li>
+                </ul>
+            </div>
+
+            <div class="panel" id="contact">
+                <h2>Exit</h2>
+                <p>Contact protocol: <a href="mailto:abdelkaderrouis22@gmail.com">Email</a>, <a
+                        href="https://github.com/rouisaek22" target="_blank">GitHub</a>.
+                </p>
             </div>
         </div>
-        
-        <footer>
-            <div class="footer-content">
-                <div class="copyright">
-                    &copy; 2010 My Retro Blog. All rights reserved.
-                </div>
-                <div class="social-icons">
-                    <a href="#"><i class="fa fa-facebook"></i></a>
-                    <a href="#"><i class="fa fa-twitter"></i></a>
-                    <a href="#"><i class="fa fa-rss"></i></a>
-                </div>
-            </div>
-        </footer>
+        <audio id="click-sound" src="media/click.mp3" preload="auto"></audio>
+        <audio id="bg-music" src="media/background.mp3" loop></audio>
     </div>
-
     <script>
-        // Simple JavaScript for interactivity
-        document.addEventListener('DOMContentLoaded', function() {
-            // Add click effect to read more buttons
-            const readMoreButtons = document.querySelectorAll('.read-more');
-            readMoreButtons.forEach(button => {
-                button.addEventListener('click', function(e) {
-                    e.preventDefault();
-                    alert('This would normally take you to the full article page!');
-                });
+        const tabs = document.querySelectorAll('.top-menu div');
+        const panels = document.querySelectorAll('.panel');
+        const clickSound = document.getElementById('click-sound');
+
+        tabs.forEach(tab => {
+            tab.addEventListener('click', () => {
+                // Play sound
+                clickSound.currentTime = 0;
+                clickSound.play();
+
+                // Tab switching logic
+                tabs.forEach(t => t.classList.remove('active'));
+                tab.classList.add('active');
+
+                panels.forEach(p => p.classList.remove('active'));
+                document.getElementById(tab.dataset.target).classList.add('active');
             });
-            
-            // Add hover effect to post titles
-            const postTitles = document.querySelectorAll('.post-title');
-            postTitles.forEach(title => {
-                title.addEventListener('mouseover', function() {
-                    this.style.color = '#ff9900';
-                });
-                title.addEventListener('mouseout', function() {
-                    this.style.color = '#2c4a8a';
-                });
-            });
-            
-            // Simple form validation for subscription
-            const subscribeForm = document.querySelector('.widget-content button');
-            if (subscribeForm) {
-                subscribeForm.addEventListener('click', function(e) {
-                    e.preventDefault();
-                    const emailInput = this.parentElement.querySelector('input[type="email"]');
-                    if (emailInput.value === '') {
-                        alert('Please enter your email address!');
-                    } else {
-                        alert('Thanks for subscribing!');
-                        emailInput.value = '';
-                    }
-                });
-            }
         });
+
+        window.addEventListener('DOMContentLoaded', () => {
+            const bgMusic = document.getElementById('bg-music');
+            bgMusic.volume = 0.2;
+            bgMusic.play().catch(e => {
+                console.log("Autoplay blocked, user interaction needed:", e);
+            });
+        });
+
     </script>
 </body>
+
 </html>
