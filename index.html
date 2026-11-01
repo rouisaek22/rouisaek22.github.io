@@ -1,164 +1,220 @@
-<!DOCTYPE html>
-<html>
-
+<!doctype html>
+<html lang="en">
 <head>
-    <meta charset="utf-8">
-    <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
-    <title>Rouis Aek</title>
-    <style>
-        body {
-            background: #000;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            margin: 0;
-            font-family: 'VT323', monospace;
-            font-size: 20px;
-            color: #fff;
-        }
-
-        a {
-            color: yellow;
-            text-decoration: none;
-        }
-
-        .bios-screen {
-            width: 800px;
-            height: 600px;
-            background: #0000a8;
-            border: 4px solid #1a1a1a;
-            box-shadow: 0 0 25px #000;
-            overflow: hidden;
-        }
-
-        .top-menu {
-            background: #0000a8;
-            padding: 10px 20px;
-            border-bottom: 2px solid #ffffff;
-            display: flex;
-            gap: 20px;
-        }
-
-        .top-menu div {
-            cursor: pointer;
-        }
-
-        .top-menu .active {
-            color: yellow;
-            text-decoration: underline;
-        }
-
-        .content {
-            padding: 20px;
-        }
-
-        .panel {
-            display: none;
-        }
-
-        .panel.active {
-            display: block;
-        }
-    </style>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>HVAC-R Technician | Automation &amp; Embedded Systems</title>
+<meta name="description" content="HVAC-R technician with 5+ years of experience, expanding into automation, embedded systems, IoT and smart HVAC.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600;700&display=swap">
+<style>
+body{margin:0;background:#0F1518}
+a{color:#4FD1C5}
+a:hover{color:#8BE6DD}
+.btn-primary:hover{background:#8BE6DD !important}
+.btn-ghost:hover{border-color:#4FD1C5 !important;color:#4FD1C5 !important}
+.card:hover{border-color:#2F4A50 !important}
+.navlink{color:#9FB0B6;text-decoration:none}
+.navlink:hover{color:#E8EEF0}
+</style>
+<style>html{scroll-behavior:smooth}</style>
 </head>
-
 <body>
-    <div class="bios-screen">
-        <div class="top-menu">
-            <div data-target="about" class="active">Main</div>
-            <div data-target="projects">Boot</div>
-            <div data-target="skills">Advanced</div>
-            <div data-target="utils">Utilities</div>
-            <div data-target="contact">Exit</div>
-        </div>
+<div style="background:#0F1518;color:#E8EEF0;font-family:'IBM Plex Sans',system-ui,sans-serif;width:100%;box-sizing:border-box;overflow-x:hidden">
 
-        <div class="content">
-            <div class="panel active" id="about">
-                <h2>Main</h2>
-                <p>My name is Rouis Abdelkader, based in Algeria. I use the .NET ecosystem to build backend and frontend
-                    web solutions.</p>
-                <hr>
-            </div>
+<!-- NAV -->
+<div style="max-width:1120px;margin:0 auto;padding:24px 24px;box-sizing:border-box;display:flex;flex-wrap:wrap;gap:16px;align-items:center;justify-content:space-between">
+<div style="font-family:'IBM Plex Mono',monospace;font-size:14px;color:#E8EEF0;display:flex;align-items:center;gap:10px">
+<span style="display:inline-block;width:10px;height:10px;border-radius:50%;background:#4FD1C5"></span>
+Rouis Abdelkader
+</div>
+<div style="display:flex;flex-wrap:wrap;gap:24px;font-size:14px">
+<a class="navlink" href="#path">Path</a>
+<a class="navlink" href="#skills">Skills</a>
+<a class="navlink" href="#smart">Smart HVAC</a>
+<a class="navlink" href="#contact">Contact</a>
+</div>
+</div>
 
-            <div class="panel" id="projects">
-                <h2>Boot</h2>
-                <p>Project list loaded.</p>
-                <ul>
-                    <li><a href="https://github.com/rouisaek22/anvil-http" target="_blank">Anvil.Http(experimental)</a>:
-                        High-performance HTTP
-                        request parser for .NET using zero-copy, span-based parsing.</li>
-                </ul>
-            </div>
+<!-- HERO -->
+<div style="max-width:1120px;margin:0 auto;padding:72px 24px 88px;box-sizing:border-box;display:flex;flex-direction:column;gap:32px">
+<div style="font-family:'IBM Plex Mono',monospace;font-size:13px;letter-spacing:0.08em;text-transform:uppercase;color:#F2A33A">HVAC-R Technician &nbsp;/&nbsp; Automation &amp; Embedded Systems</div>
+<h1 style="margin:0;font-size:60px;line-height:1.05;font-weight:700;letter-spacing:-0.02em;max-width:880px">From refrigerant lines to firmware: making cooling systems <span style="color:#4FD1C5">think</span>.</h1>
+<p style="margin:0;font-size:19px;line-height:1.6;color:#9FB0B6;max-width:680px">With 5+ years of hands-on experience in HVAC-R maintenance, I'm expanding into automation, embedded systems, IoT and industrial control, with a particular interest in smart HVAC solutions.</p>
+<div style="display:flex;flex-wrap:wrap;gap:16px">
+<a class="btn-primary" href="#contact" style="background:#4FD1C5;color:#0F1518;text-decoration:none;font-weight:600;font-size:15px;padding:14px 24px;border-radius:6px;min-height:44px;box-sizing:border-box;display:inline-flex;align-items:center">Get in touch</a>
+<a class="btn-ghost" href="#path" style="border:1px solid #2F4A50;color:#E8EEF0;text-decoration:none;font-weight:500;font-size:15px;padding:14px 24px;border-radius:6px;min-height:44px;box-sizing:border-box;display:inline-flex;align-items:center">See my path</a>
+</div>
 
-            <div class="panel" id="skills">
-                <h2>Advanced</h2>
-                <p>Capabilities:</p>
-                <ul>
-                    <li>Adaptable</li>
-                    <li>Analytical</li>
-                    <li>Decisive</li>
-                    <li>Disciplined</li>
-                    <li>Innovative</li>
-                    <li>Insightful</li>
-                    <li>Pragmatic</li>
-                    <li>Resilient</li>
-                    <li>Resourceful</li>
-                </ul>
-            </div>
+<!-- Three layers strip -->
+<div style="display:flex;flex-wrap:wrap;gap:16px;margin-top:24px;align-items:stretch">
+<div style="flex:1 1 240px;border:1px solid #22363B;border-radius:10px;padding:20px;background:#131D21;display:flex;flex-direction:column;gap:8px">
+<div style="font-family:'IBM Plex Mono',monospace;font-size:12px;color:#9FB0B6">LAYER 01</div>
+<div style="font-size:20px;font-weight:600">Mechanical</div>
+<div style="font-size:15px;color:#9FB0B6;line-height:1.5">Compressors, evaporators, condensers, refrigerant circuits.</div>
+</div>
+<div style="display:flex;align-items:center;color:#4FD1C5;font-family:'IBM Plex Mono',monospace">+</div>
+<div style="flex:1 1 240px;border:1px solid #22363B;border-radius:10px;padding:20px;background:#131D21;display:flex;flex-direction:column;gap:8px">
+<div style="font-family:'IBM Plex Mono',monospace;font-size:12px;color:#9FB0B6">LAYER 02</div>
+<div style="font-size:20px;font-weight:600">Electronics</div>
+<div style="font-size:15px;color:#9FB0B6;line-height:1.5">Sensors, actuators, control boards and industrial control.</div>
+</div>
+<div style="display:flex;align-items:center;color:#4FD1C5;font-family:'IBM Plex Mono',monospace">+</div>
+<div style="flex:1 1 240px;border:1px solid #22363B;border-radius:10px;padding:20px;background:#131D21;display:flex;flex-direction:column;gap:8px">
+<div style="font-family:'IBM Plex Mono',monospace;font-size:12px;color:#9FB0B6">LAYER 03</div>
+<div style="font-size:20px;font-weight:600">Software</div>
+<div style="font-size:15px;color:#9FB0B6;line-height:1.5">Embedded code, IoT connectivity and automation logic.</div>
+</div>
+</div>
+</div>
 
-            <div class="panel" id="utils">
-                <h2>Interests</h2>
-                <ul>
-                    <li>Algorithms & Data Structures</li>
-                    <li>Computer Graphics</li>
-                    <li>Computer networking</li>
-                    <li>Cryptography</li>
-                    <li>Electronics</li>
-                    <li>Low-level programming</li>
-                    <li>Performance optimization</li>
-                </ul>
-            </div>
+<!-- PATH -->
+<div id="path" style="border-top:1px solid #22363B;background:#101A1D">
+<div style="max-width:1120px;margin:0 auto;padding:88px 24px;box-sizing:border-box;display:flex;flex-direction:column;gap:40px">
+<div style="display:flex;flex-direction:column;gap:12px">
+<div style="font-family:'IBM Plex Mono',monospace;font-size:13px;color:#F2A33A;letter-spacing:0.08em;text-transform:uppercase">Path</div>
+<h2 style="margin:0;font-size:36px;line-height:1.15;letter-spacing:-0.01em;max-width:720px">Practical roots, intelligent direction.</h2>
+</div>
+<div style="display:flex;flex-wrap:wrap;gap:20px;align-items:stretch">
+<div class="card" style="flex:1 1 300px;border:1px solid #22363B;border-radius:10px;padding:28px;background:#131D21;display:flex;flex-direction:column;gap:12px">
+<div style="font-family:'IBM Plex Mono',monospace;font-size:13px;color:#4FD1C5">5+ YEARS</div>
+<div style="font-size:22px;font-weight:600">HVAC-R maintenance</div>
+<div style="font-size:15px;line-height:1.6;color:#9FB0B6">Hands-on field experience keeping heating, ventilation, air conditioning and refrigeration systems running. This is where I learned how real systems behave, and how they fail.</div>
+</div>
+<div class="card" style="flex:1 1 300px;border:1px solid #22363B;border-radius:10px;padding:28px;background:#131D21;display:flex;flex-direction:column;gap:12px">
+<div style="font-family:'IBM Plex Mono',monospace;font-size:13px;color:#F2A33A">NOW</div>
+<div style="font-size:22px;font-weight:600">Automation &amp; embedded</div>
+<div style="font-size:15px;line-height:1.6;color:#9FB0B6">Expanding into automation, embedded systems, IoT and industrial control, connecting what I know about machines to what controllers and code can do with them.</div>
+</div>
+<div class="card" style="flex:1 1 300px;border:1px solid #22363B;border-radius:10px;padding:28px;background:#131D21;display:flex;flex-direction:column;gap:12px">
+<div style="font-family:'IBM Plex Mono',monospace;font-size:13px;color:#9FB0B6">NEXT</div>
+<div style="font-size:22px;font-weight:600">Smart HVAC solutions</div>
+<div style="font-size:15px;line-height:1.6;color:#9FB0B6">Developing practical, intelligent solutions that bridge mechanical systems, electronics and software for HVAC and refrigeration.</div>
+</div>
+</div>
+</div>
+</div>
 
-            <div class="panel" id="contact">
-                <h2>Exit</h2>
-                <p>Contact protocol: <a href="mailto:abdelkaderrouis22@gmail.com">Email</a>, <a
-                        href="https://github.com/rouisaek22" target="_blank">GitHub</a>.
-                </p>
-            </div>
-        </div>
-        <audio id="click-sound" src="media/click.mp3" preload="auto"></audio>
-        <!-- <audio id="bg-music" src="media/background.mp3" loop></audio> -->
-    </div>
-    <script>
-        const tabs = document.querySelectorAll('.top-menu div');
-        const panels = document.querySelectorAll('.panel');
-        const clickSound = document.getElementById('click-sound');
+<!-- SKILLS -->
+<div id="skills" style="border-top:1px solid #22363B">
+<div style="max-width:1120px;margin:0 auto;padding:88px 24px;box-sizing:border-box;display:flex;flex-direction:column;gap:40px">
+<div style="display:flex;flex-direction:column;gap:12px">
+<div style="font-family:'IBM Plex Mono',monospace;font-size:13px;color:#F2A33A;letter-spacing:0.08em;text-transform:uppercase">Skills</div>
+<h2 style="margin:0;font-size:36px;line-height:1.15;letter-spacing:-0.01em;max-width:720px">What I bring, and what I'm building.</h2>
+</div>
+<div style="display:flex;flex-wrap:wrap;gap:20px;align-items:stretch">
+<div style="flex:1 1 440px;border:1px solid #22363B;border-radius:10px;padding:28px;background:#131D21;display:flex;flex-direction:column;gap:20px">
+<div style="font-size:20px;font-weight:600">Field expertise</div>
+<div style="display:flex;flex-wrap:wrap;gap:10px">
+<span style="font-family:'IBM Plex Mono',monospace;font-size:13px;padding:8px 14px;border:1px solid #2F4A50;border-radius:999px;color:#E8EEF0">HVAC maintenance</span>
+<span style="font-family:'IBM Plex Mono',monospace;font-size:13px;padding:8px 14px;border:1px solid #2F4A50;border-radius:999px;color:#E8EEF0">Refrigeration systems</span>
+<span style="font-family:'IBM Plex Mono',monospace;font-size:13px;padding:8px 14px;border:1px solid #2F4A50;border-radius:999px;color:#E8EEF0">Troubleshooting</span>
+<span style="font-family:'IBM Plex Mono',monospace;font-size:13px;padding:8px 14px;border:1px solid #2F4A50;border-radius:999px;color:#E8EEF0">Preventive maintenance</span>
+<span style="font-family:'IBM Plex Mono',monospace;font-size:13px;padding:8px 14px;border:1px solid #2F4A50;border-radius:999px;color:#E8EEF0">Mechanical systems</span>
+</div>
+</div>
+<div style="flex:1 1 440px;border:1px solid #4FD1C5;border-radius:10px;padding:28px;background:#131D21;display:flex;flex-direction:column;gap:20px">
+<div style="font-size:20px;font-weight:600;display:flex;align-items:center;gap:10px">Growing into
+<span style="font-family:'IBM Plex Mono',monospace;font-size:11px;color:#0F1518;background:#F2A33A;padding:3px 8px;border-radius:4px;font-weight:500">IN PROGRESS</span></div>
+<div style="display:flex;flex-wrap:wrap;gap:10px">
+<span style="font-family:'IBM Plex Mono',monospace;font-size:13px;padding:8px 14px;border:1px solid #4FD1C5;border-radius:999px;color:#4FD1C5">Automation</span>
+<span style="font-family:'IBM Plex Mono',monospace;font-size:13px;padding:8px 14px;border:1px solid #4FD1C5;border-radius:999px;color:#4FD1C5">Embedded systems</span>
+<span style="font-family:'IBM Plex Mono',monospace;font-size:13px;padding:8px 14px;border:1px solid #4FD1C5;border-radius:999px;color:#4FD1C5">IoT</span>
+<span style="font-family:'IBM Plex Mono',monospace;font-size:13px;padding:8px 14px;border:1px solid #4FD1C5;border-radius:999px;color:#4FD1C5">Industrial control</span>
+<span style="font-family:'IBM Plex Mono',monospace;font-size:13px;padding:8px 14px;border:1px solid #4FD1C5;border-radius:999px;color:#4FD1C5">Smart HVAC</span>
+<span style="font-family:'IBM Plex Mono',monospace;font-size:13px;padding:8px 14px;border:1px solid #4FD1C5;border-radius:999px;color:#4FD1C5">Electronics</span>
+</div>
+</div>
+</div>
+</div>
+</div>
 
-        tabs.forEach(tab => {
-            tab.addEventListener('click', () => {
-                // Play sound
-                clickSound.currentTime = 0;
-                clickSound.play();
+<!-- SMART HVAC -->
+<div id="smart" style="border-top:1px solid #22363B;background:#101A1D">
+<div style="max-width:1120px;margin:0 auto;padding:88px 24px;box-sizing:border-box;display:flex;flex-direction:column;gap:40px">
+<div style="display:flex;flex-direction:column;gap:12px">
+<div style="font-family:'IBM Plex Mono',monospace;font-size:13px;color:#F2A33A;letter-spacing:0.08em;text-transform:uppercase">Focus</div>
+<h2 style="margin:0;font-size:36px;line-height:1.15;letter-spacing:-0.01em;max-width:720px">Where I'm headed: smart HVAC.</h2>
+<p style="margin:0;font-size:17px;line-height:1.6;color:#9FB0B6;max-width:680px">The idea is simple: give HVAC and refrigeration equipment eyes, a brain and a voice. A technician who understands the machine is well placed to design the sensing and control around it.</p>
+</div>
 
-                // Tab switching logic
-                tabs.forEach(t => t.classList.remove('active'));
-                tab.classList.add('active');
+<!-- Signal chain -->
+<div style="display:flex;flex-wrap:wrap;gap:12px;align-items:stretch">
+<div style="flex:1 1 180px;border:1px solid #22363B;border-radius:10px;padding:20px;background:#131D21;display:flex;flex-direction:column;gap:10px">
+<svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#4FD1C5" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 14.76V3.5a2.5 2.5 0 0 0-5 0v11.26a4.5 4.5 0 1 0 5 0z"/></svg>
+<div style="font-weight:600;font-size:17px">Sense</div>
+<div style="font-size:14px;color:#9FB0B6;line-height:1.5">Temperature, pressure and current from the equipment.</div>
+</div>
+<div style="display:flex;align-items:center;color:#4FD1C5;font-family:'IBM Plex Mono',monospace" aria-hidden="true">&rarr;</div>
+<div style="flex:1 1 180px;border:1px solid #22363B;border-radius:10px;padding:20px;background:#131D21;display:flex;flex-direction:column;gap:10px">
+<svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#4FD1C5" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="5" y="5" width="14" height="14" rx="2"/><rect x="9" y="9" width="6" height="6"/><path d="M9 2v3M15 2v3M9 19v3M15 19v3M2 9h3M2 15h3M19 9h3M19 15h3"/></svg>
+<div style="font-weight:600;font-size:17px">Control</div>
+<div style="font-size:14px;color:#9FB0B6;line-height:1.5">Embedded logic and automation that acts on the readings.</div>
+</div>
+<div style="display:flex;align-items:center;color:#4FD1C5;font-family:'IBM Plex Mono',monospace" aria-hidden="true">&rarr;</div>
+<div style="flex:1 1 180px;border:1px solid #22363B;border-radius:10px;padding:20px;background:#131D21;display:flex;flex-direction:column;gap:10px">
+<svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#4FD1C5" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5a10 10 0 0 1 14 0"/><path d="M8.5 16a5 5 0 0 1 7 0"/><circle cx="12" cy="19" r="1"/></svg>
+<div style="font-weight:600;font-size:17px">Connect</div>
+<div style="font-size:14px;color:#9FB0B6;line-height:1.5">IoT connectivity to move data off the machine.</div>
+</div>
+<div style="display:flex;align-items:center;color:#4FD1C5;font-family:'IBM Plex Mono',monospace" aria-hidden="true">&rarr;</div>
+<div style="flex:1 1 180px;border:1px solid #22363B;border-radius:10px;padding:20px;background:#131D21;display:flex;flex-direction:column;gap:10px">
+<svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#4FD1C5" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 3v18h18"/><path d="M7 15l4-4 3 3 5-6"/></svg>
+<div style="font-weight:600;font-size:17px">Understand</div>
+<div style="font-size:14px;color:#9FB0B6;line-height:1.5">Monitoring that turns data into maintenance decisions.</div>
+</div>
+</div>
+</div>
+</div>
 
-                panels.forEach(p => p.classList.remove('active'));
-                document.getElementById(tab.dataset.target).classList.add('active');
-            });
-        });
+<!-- PROJECTS PLACEHOLDER 
+<div style="border-top:1px solid #22363B">
+<div style="max-width:1120px;margin:0 auto;padding:88px 24px;box-sizing:border-box;display:flex;flex-direction:column;gap:40px">
+<div style="display:flex;flex-direction:column;gap:12px">
+<div style="font-family:'IBM Plex Mono',monospace;font-size:13px;color:#F2A33A;letter-spacing:0.08em;text-transform:uppercase">Projects</div>
+<h2 style="margin:0;font-size:36px;line-height:1.15;letter-spacing:-0.01em;max-width:720px">Selected builds.</h2>
+</div>
+<div style="display:flex;flex-wrap:wrap;gap:20px;align-items:stretch">
+<div class="card" style="flex:1 1 300px;border:1px dashed #2F4A50;border-radius:10px;padding:28px;background:#131D21;display:flex;flex-direction:column;gap:12px">
+<div style="font-family:'IBM Plex Mono',monospace;font-size:13px;color:#9FB0B6">PROJECT 01</div>
+<div style="font-size:20px;font-weight:600">[PROJECT NAME]</div>
+<div style="font-size:15px;line-height:1.6;color:#9FB0B6">[One or two lines: what you built, which hardware you used, what problem it solved.]</div>
+<div style="font-family:'IBM Plex Mono',monospace;font-size:12px;color:#4FD1C5">[TOOLS / BOARD]</div>
+</div>
+<div class="card" style="flex:1 1 300px;border:1px dashed #2F4A50;border-radius:10px;padding:28px;background:#131D21;display:flex;flex-direction:column;gap:12px">
+<div style="font-family:'IBM Plex Mono',monospace;font-size:13px;color:#9FB0B6">PROJECT 02</div>
+<div style="font-size:20px;font-weight:600">[PROJECT NAME]</div>
+<div style="font-size:15px;line-height:1.6;color:#9FB0B6">[One or two lines: what you built, which hardware you used, what problem it solved.]</div>
+<div style="font-family:'IBM Plex Mono',monospace;font-size:12px;color:#4FD1C5">[TOOLS / BOARD]</div>
+</div>
+<div class="card" style="flex:1 1 300px;border:1px dashed #2F4A50;border-radius:10px;padding:28px;background:#131D21;display:flex;flex-direction:column;gap:12px">
+<div style="font-family:'IBM Plex Mono',monospace;font-size:13px;color:#9FB0B6">PROJECT 03</div>
+<div style="font-size:20px;font-weight:600">[PROJECT NAME]</div>
+<div style="font-size:15px;line-height:1.6;color:#9FB0B6">[One or two lines: what you built, which hardware you used, what problem it solved.]</div>
+<div style="font-family:'IBM Plex Mono',monospace;font-size:12px;color:#4FD1C5">[TOOLS / BOARD]</div>
+</div>
+</div>
+</div>
+</div>
+-->
+<!-- CONTACT -->
+<div id="contact" style="border-top:1px solid #22363B;background:#101A1D">
+<div style="max-width:1120px;margin:0 auto;padding:88px 24px;box-sizing:border-box;display:flex;flex-direction:column;gap:28px">
+<div style="font-family:'IBM Plex Mono',monospace;font-size:13px;color:#F2A33A;letter-spacing:0.08em;text-transform:uppercase">Contact</div>
+<h2 style="margin:0;font-size:40px;line-height:1.1;letter-spacing:-0.01em;max-width:720px">Have a system that needs to get smarter?</h2>
+<p style="margin:0;font-size:17px;line-height:1.6;color:#9FB0B6;max-width:620px">Open to collaboration, projects and roles where HVAC-R meets automation, embedded systems and IoT.</p>
+<div style="display:flex;flex-wrap:wrap;gap:16px">
+<a class="btn-primary" href="mailto:abdelkaderrouis22@gmail.com" style="background:#4FD1C5;color:#0F1518;text-decoration:none;font-weight:600;font-size:15px;padding:14px 24px;border-radius:6px;min-height:44px;box-sizing:border-box;display:inline-flex;align-items:center">[YOUR EMAIL]</a>
+<a class="btn-ghost" href="https://www.linkedin.com/in/rouisaek" style="border:1px solid #2F4A50;color:#E8EEF0;text-decoration:none;font-weight:500;font-size:15px;padding:14px 24px;border-radius:6px;min-height:44px;box-sizing:border-box;display:inline-flex;align-items:center">LinkedIn</a>
+<a class="btn-ghost" href="https://www.github.com/rouisaek22" style="border:1px solid #2F4A50;color:#E8EEF0;text-decoration:none;font-weight:500;font-size:15px;padding:14px 24px;border-radius:6px;min-height:44px;box-sizing:border-box;display:inline-flex;align-items:center">GitHub</a>
+</div>
+</div>
+</div>
 
-        window.addEventListener('DOMContentLoaded', () => {
-            const bgMusic = document.getElementById('bg-music');
-            bgMusic.volume = 0.2;
-            bgMusic.play().catch(e => {
-                console.log("Autoplay blocked, user interaction needed:", e);
-            });
-        });
+<div style="border-top:1px solid #22363B;padding:24px;text-align:center;font-family:'IBM Plex Mono',monospace;font-size:12px;color:#9FB0B6">
+Rouis Abdelkader &nbsp;·&nbsp; HVAC-R Technician &nbsp;·&nbsp; Automation &amp; Embedded Systems
+</div>
 
-    </script>
+</div>
 </body>
-
 </html>
